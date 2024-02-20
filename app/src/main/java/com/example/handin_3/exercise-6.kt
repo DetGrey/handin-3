@@ -17,7 +17,7 @@ Implement functions to add products, remove products, and display the current in
 class Product(val name: String, var quantity: Int) {}
 
 class ProductInventory() {
-    val products: MutableList<Product> = mutableListOf()
+    private val products: MutableList<Product> = mutableListOf()
 
     fun addProduct(product: Product) {
         products.add(product)
